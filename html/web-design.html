@@ -1,60 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="/styles_web_design.css">
+
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
 </head>
+
 <body>
-  Our Company
-  Locations
-  Contact
+  <div class="overlay"></div>
+  <header>
+    <div class="navbar-container">
+      <div class="logo"><a href="index.html"><img src="/assets/logo/logo.png" alt="DESIGNO Logo"></a></div>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="about.html"><li>OUR COMPANY</li></a>
+          <a href="locations.html"><li>LOCATIONS</li></a>
+          <a href="contact.html"><li>CONTACT</li></a>
+        </ul>
+      </div>
+    </div>
+  </header>
 
-  Web design
-  We build websites that serve as powerful marketing tools and bring memorable brand experiences.
-  
-  Express
-  A multi-carrier shipping website for ecommerce businesses
+  <section>
+    <div class="hero">
+      <div class="hero-text">
+        <h2>Web Design<h2>
+            <p>We build websites that serve as powerful marketing tools and bring memorable brand experiences.</p>
+      </div>
+    </div>
+  </section>
 
-  Transfer
-  Site for low-cost money transfers and sending money within seconds
+  <div class="grid-section">
+    <div class="grid-item">
+      <img src="/assets/web-design/desktop/image-express.jpg"></img>
+       <div class ="grid-item-text">
+        <h2>EXPRESS</h2>
+        <p>A multi-carrier shipping website for ecommerce businesses</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="/assets/web-design/desktop/image-transfer.jpg"></img>
+       <div class="grid-item-text">
+        <h2>TRANSFER</h2>
+        <p>Site for low-cost money transfers and sending money within seconds</p>
+       </div>
+    </div>
+    <div class="grid-item">
+      <img src="/assets/web-design/desktop/image-photon.jpg"></img>
+        <div class="grid-item-text">
+          <h2>PHOTON</h2>
+        <p>A state-of-the-art music player with high-resolution audio and DSP effects</p>
+        </div>
+    </div>
+    <div class="grid-item">
+      <img src="/assets/web-design/desktop/image-builder.jpg"></img>
+       <div class="grid-item-text">
+        <h2>BUILDER</h2>
+        <p>Connects users with local contractors based on their location</p>
+       </div>
+    </div>
+    <div class="grid-item">
+      <img src="/assets/web-design/desktop/image-blogr.jpg"></img>
+        <div class="grid-item-text">
+          <h2>BLOGR</h2>
+          <p>Blogr is a platform for creating an online blog or publication</p>
+        </div>
+    </div>
+    <div class="grid-item">
+      <img src="/assets/web-design/desktop/image-camp.jpg"></img>
+        <div class="grid-item-text">
+          <h2>CAMP</h2>
+          <p>Get expert training in coding, data, design, and digital marketing</p>
+        </div>
+      </div>
+  </div>
 
-  Photon
-  A state-of-the-art music player with high-resolution audio and DSP effects
 
-  Builder
-  Connects users with local contractors based on their location
+  <div class="services-grid">
+    <div class="service-item" id="app-design">
+      <div class="service-text">
+        <h2>APP DESIGN</h2>
+        <a href="app-design.html">VIEW PROJECTS</a>
+      </div>
+    </div>
+    <div class="service-item" id="graphic-design">
+      <div class="service-text">
+        <h2>GRAPHIC DESIGN</h2>
+        <a href="graphic-design.html">VIEW PROJECTS</a>
+      </div>
+    </div>
+  </div>
 
-  Blogr
-  Blogr is a platform for creating an online blog or publication
 
-  Camp
-  Get expert training in coding, data, design, and digital marketing
+    <div class="contact">
+      <div class="contact-text">
+        <div class="text-wrapper">
+          <h2>Let’s talk about your project</h2>
+          <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business
+            grow.</p>
+        </div>
+      </div>
+      <a href="contact.html" class="contact-button">GET IN TOUCH</a>
+    </div>
 
-  App Design
-  View Projects
-  
-  Graphic Design
-  View Projects
-  
-  Let’s talk about your project
-  Ready to take it to the next level? Contact us today and find out how our expertise can help 
-  your business grow.
-  Get in touch
-  
-  Our company
-  Locations
-  Contact
-  
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-  
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
+    <footer>
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-logo"></div>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Company</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-contact">
+            <div class="footer-contact-column">
+              <div>Designo Central Office</div>
+              <div>3886 Wellington Street</div>
+              <div>Toronto, Ontario M9C 3J5</div>
+            </div>
+            <div class="footer-contact-column">
+              <div>Contact Us (Central Office)</div>
+              <div>P: +1 253-863-8967</div>
+              <div>M: contact@designo.co</div>
+            </div>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+          
+        </div>
+      </div>
+    </footer> 
+
+    <script src = "/menu.js"></script>
 </body>
+
 </html>

@@ -5,53 +5,139 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="/styles_app_design.css">
   
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
 </head>
 <body>
-  Our Company
-  Locations
-  Contact
+  <div class="overlay"></div>
+  <header>
+    <div class="navbar-container">
+      <div class="logo"><a href="index.html"><img src="/assets/logo/logo.png" alt="DESIGNO Logo"></a></div>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="about.html"><li>OUR COMPANY</li></a>
+          <a href="locations.html"><li>LOCATIONS</li></a>
+          <a href="contact.html"><li>CONTACT</li></a>
+        </ul>
+      </div>
 
-  App design
-  Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.
+      
+    </div>
+  </header>
 
-  Airfilter
-  Solving the problem of poor indoor air quality by filtering the air
+  <section>
+    <div class="hero">
+      <div class="hero-text">
+        <h2>App Design<h2>
+            <p>Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.</p>
+      </div>
+    </div>
+  </section>
 
-  Eyecam
-  Product that lets you edit your favorite photos and videos at any time
+  <div class="grid-section">
+    <div class="grid-item">
+      <img src="/assets/app-design/desktop/image-airfilter.jpg"></img>
+        <div class="grid-item-text">
+          <h2>AIRFILTER</h2>
+          <p>Solving the problems of poor indor air quality by filtering the air</p>
+        </div>
+    </div>
+    <div class="grid-item">
+      <img src="/assets/app-design/desktop/image-eyecam.jpg"></img>
+        <div class="grid-item-text">
+          <h2>EYECAM</h2>
+          <p>Product that lets you edit your favorite photos and videos at any time</p>
+        </div>
+    </div>
+    <div class="grid-item">
+      <img src="/assets/app-design/desktop/image-faceit.jpg"></img>
+        <div class="grid-item-text">
+          <h2>FACEIT</h2>
+          <p>Get to meet your favorite internet superstar with the Faceit app</p>
+        </div>
+    </div>
+    <div class="grid-item">
+      <img src="/assets/app-design/desktop/image-todo.jpg"></img>
+       <div class="grid-item-text">
+        <h2>TODO</h2>
+        <p>A todo app that features cloud sync with light and dark mode</p>
+       </div>
+    </div>
+    <div class="grid-item">
+      <img src="/assets/app-design/desktop/image-loopstudios.jpg"></img>
+       <div class="grid-item-text">
+        <h2>LOOPSTUDIOS</h2>
+        <p>A VR experience app made for Loopstudios</p>
+       </div>
+    </div>
+  </div>
 
-  Faceit
-  Get to meet your favorite internet superstar with the faceit app
+  <div class="services-grid">
+    <div class="service-item" id="web-design">
+      <div class="service-text">
+        <h2>WEB DESIGN</h2>
+        <a href="web-design.html">VIEW PROJECTS</a>
+      </div>
+    </div>
+    <div class="service-item" id="graphic-design">
+      <div class="service-text">
+        <h2>GRAPHIC DESIGN</h2>
+        <a href="graphic-design.html">VIEW PROJECTS</a>
+      </div>
+    </div>
+  </div>
 
-  Todo
-  A todo app that features cloud sync with light and dark mode
+  <div class="contact">
+    <div class="contact-text">
+      <div class="text-wrapper">
+        <h2>Let’s talk about your project</h2>
+        <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business
+          grow.</p>
+      </div>
+    </div>
+    <a href="#" class="contact-button">GET IN TOUCH</a>
+  </div>
 
-  Loopstudios
-  A VR experience app made for Loopstudios
-
-  Web Design
-  View Projects
-
-  Graphic Design
-  View Projects
-
-  Let’s talk about your project
-  Ready to take it to the next level? Contact us today and find out how our expertise can help
-  your business grow.
-  Get in touch
-
-  Our company
-  Locations
-  Contact
-
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-logo"></div>
+        <ul class="footer-links">
+          <li><a href="#">Our Company</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-contact">
+          <div class="footer-contact-column">
+            <div>Designo Central Office</div>
+            <div>3886 Wellington Street</div>
+            <div>Toronto, Ontario M9C 3J5</div>
+          </div>
+          <div class="footer-contact-column">
+            <div>Contact Us (Central Office)</div>
+            <div>P: +1 253-863-8967</div>
+            <div>M: contact@designo.co</div>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        
+      </div>
+    </div>
+  </footer> 
+  <script src = "/menu.js"></script>
 </body>
 </html>
