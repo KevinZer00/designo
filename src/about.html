@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-  <link rel="stylesheet" href="/styles_locations.css">
+  <link rel="stylesheet" href="/src/styles_about.css">
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
 </head>
+
 <body>
   <div class="overlay"></div>
+  <img src="/assets/home/desktop/background-oval.svg" class="background-oval-1">
+  <img src="/assets/home/desktop/background-oval-2.png" class="background-oval-2">
   <header>
     <div class="navbar-container">
       <div class="logo"><a href="index.html"><img src="/assets/logo/logo.png" alt="DESIGNO Logo"></a></div>
@@ -32,75 +34,71 @@
     </div>
   </header>
 
-  <div class="location">
-    <div class="content">
-      <h3>Canada</h3>
-      <div class="contact-info">
-        <div class="address">
-          <strong>Designo Central Office</strong>
-          <br>
-          3886 Wellington Street
-          <br>
-          Toronto, Ontario M9C 3J5
-        </div>
-        <div class="phone">
-          <strong>Contact</strong>
-          <br>
-          P : +1 253-863-8967
-          <br>
-          M : contact@designo.co
-        </div>
-      </div>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>About Us</h1>
+      <p>
+        Founded in 2010, we are a creative agency that produces lasting results for our clients.
+        We’ve partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact.
+        We’re always looking forward to creating brands, products, and digital experiences that connect with our
+        clients’ audiences.
+      </p>
     </div>
-    <div id="mapid1"></div>
+    <div class="hero-img"></div>
   </div>
 
-  <div class="location">
-    <div id="mapid2"></div>
-    <div class="content">
-      <h3>Australia</h3>
-      <div class="contact-info">
-        <div class="address">
-          <strong>Designo AU Office</strong>
-          <br>
-          18 Balonne Street
-          <br>
-          New South Wales 2443
-        </div>
-        <div class="phone">
-          <strong>Contact</strong>
-          <br>
-          P : (02) 6720 9092
-          <br>
-          M : contact@designo.au
-        </div>
-      </div>
+  <div class="talent">
+    <div class="talent-img"></div>
+    <div class="talent-text">
+      <h1>World-class Talent</h1>
+      <p>
+        We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully crated from
+        concept to launch,
+        enrusing success in its given market. We are constantly updating our skills in a myriad of platforms.
+        </br></br>
+        Our team is multi-disciplinary and we are not merely interested in form - content and meaning are just as
+        important.
+        We give great importance to craftsmanship, service, and prompt delivery. Clients have always been impressed with
+        our high-quality
+        outcomes that encapsulates their brand's story and mission.
+      </p>
+    </div>
+    
+  </div>
+
+ 
+  <div class="locations">
+    <div class="location1">
+      <img src="/assets/shared/desktop/illustration-canada.svg">
+      <h3>CANADA</h3>
+      <button class="see-location-btn">SEE LOCATION</button>
+    </div>
+    <div class="location2">
+      <img src="/assets/shared/desktop/illustration-australia.svg">
+      <h3>AUSTRALIA</h3>
+      <button class="see-location-btn">SEE LOCATION</button>
+    </div>
+    <div class="location3">
+      <img src="/assets/shared/desktop/illustration-united-kingdom.svg">
+      <h3>UNITED KINGDOM</h3>
+      <button class="see-location-btn">SEE LOCATION</button>
     </div>
   </div>
 
-  <div class="location">
-    <div class="content">
-      <h3>United Kingdom</h3>
-      <div class="contact-info">
-        <div class="address">
-          <strong>Designo UK Office</strong>
-          <br>
-          13 Colorado Way
-          <br>
-          Rhyd-y-fro SA8 9GA
-        </div>
-        <div class="phone">
-          <strong>Contact</strong>
-          <br>
-          P : 078 3115 1400
-          <br>
-          M : contact@designo.uk
-        </div>
-      </div>
+  <div class="real-deal">
+    <div class="real-deal-content">
+      <h1>The Real Deal</h1>
+      <p>
+        As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.
+        Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every
+        opportunity. We make design and technology more accessible and give you tools to measure success.
+        </br></br>
+        We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies,
+        we inspire audiences to take action and drive real results.
+      </p>
     </div>
-    <div id="mapid3"></div>
+    <div class="real-deal-img"></div>
   </div>
-
 
 
   <div class="contact">
@@ -147,10 +145,8 @@
         
       </div>
     </div>
-  </footer> 
-
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-  <script src="/locations.js"></script>
+  </footer>
   <script src = "/menu.js"></script>
 </body>
+
 </html>

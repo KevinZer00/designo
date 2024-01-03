@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="stylesheet" href="/styles_graphic_design.css">
+  <link rel="stylesheet" href="/src/styles_contact.css">
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
 </head>
 <body>
@@ -13,7 +14,6 @@
   <header>
     <div class="navbar-container">
       <div class="logo"><a href="index.html"><img src="/assets/logo/logo.png" alt="DESIGNO Logo"></a></div>
-  
       <div id="menuToggle">
         <input type="checkbox" />
         <span></span>
@@ -30,63 +30,54 @@
     </div>
   </header>
 
-  <section>
-    <div class="hero">
-      <div class="hero-text">
-        <h2>Graphic Design<h2>
-            <p>We deliver eye-catching branding materials that are tailored to meet your business objectives.</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="grid-section">
-    <div class="grid-item">
-      <img src="/assets/graphic-design/desktop/image-change.jpg"></img>
-        <div class="grid-item-text">
-          <h2>TIM BROWN</h2>
-          <p>A book cover designed for Tim Brown's new release, 'Change'</p>
+  <div class="hero">
+    <div class="hero-content">
+     <div class="hero-content-text">
+      <h1>Contact Us</h1>
+      <p>
+        Ready to take it to the next level? Let’s talk about your project or idea and find out how 
+        we can help your business grow. If you are looking for unique digital experiences that’s 
+        relatable to your users, drop us a line.
+      </p>
+     </div>
+      <form id="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Name" required>
+          <span class="validation-message" id="name-validation">Can't be empty</span>
         </div>
-    </div>
-    <div class="grid-item">
-      <img src="/assets/graphic-design/desktop/image-boxed-water.jpg"></img>
-        <div class="grid-item-text">
-          <h2>BOXED WATER</h2>
-          <p>A simple packaging concept made for Boxed Water</p>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <span class="validation-message" id="name-validation">Can't be empty</span>
         </div>
-    </div>
-    <div class="grid-item">
-      <img src="/assets/graphic-design/desktop/image-science.jpg"></img>
-        <div class="grid-item-text">
-          <h2>SCIENCE!</h2>
-          <p>A poster made in collaboration with the Federal Art Project</p>
+        <div class="form-group">
+          <input type="tel" id="phone" name="phone" placeholder="Phone">
+          <span class="validation-message" id="name-validation">Can't be empty</span>
         </div>
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder="Message" required></textarea>
+          <span class="validation-message" id="name-validation">Can't be empty</span>
+        </div>
+        <button type="submit">SUBMIT</button>
+      </form>
     </div>
   </div>
-
-  <div class="services-grid">
-    <div class="service-item" id="app-design">
-      <div class="service-text">
-        <h2>APP DESIGN</h2>
-        <a href="app-design.html">VIEW PROJECTS</a>
-      </div>
+  
+  <div class="locations">
+    <div class="location1">
+      <img src="/assets/shared/desktop/illustration-canada.svg">
+      <h3>CANADA</h3>
+      <button class="see-location-btn">SEE LOCATION</button>
     </div>
-    <div class="service-item" id="web-design">
-      <div class="service-text">
-        <h2>WEB DESIGN</h2>
-        <a href="web-design.html">VIEW PROJECTS</a>
-      </div>
+    <div class="location2">
+      <img src="/assets/shared/desktop/illustration-australia.svg">
+      <h3>AUSTRALIA</h3>
+      <button class="see-location-btn">SEE LOCATION</button>
     </div>
-  </div>
-
-  <div class="contact">
-    <div class="contact-text">
-      <div class="text-wrapper">
-        <h2>Let’s talk about your project</h2>
-        <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business
-          grow.</p>
-      </div>
+    <div class="location3">
+      <img src="/assets/shared/desktop/illustration-united-kingdom.svg">
+      <h3>UNITED KINGDOM</h3>
+      <button class="see-location-btn">SEE LOCATION</button>
     </div>
-    <a href="contact.html" class="contact-button">GET IN TOUCH</a>
   </div>
 
   <footer>
@@ -122,7 +113,9 @@
         
       </div>
     </div>
-  </footer> 
+  </footer>
+
+  <script src = "/contact.js"></script>
   <script src = "/menu.js"></script>
 </body>
 </html>

@@ -6,7 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="stylesheet" href="/styles_contact.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="/src/styles_locations.css">
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
 </head>
 <body>
@@ -14,6 +15,7 @@
   <header>
     <div class="navbar-container">
       <div class="logo"><a href="index.html"><img src="/assets/logo/logo.png" alt="DESIGNO Logo"></a></div>
+  
       <div id="menuToggle">
         <input type="checkbox" />
         <span></span>
@@ -30,54 +32,86 @@
     </div>
   </header>
 
-  <div class="hero">
-    <div class="hero-content">
-     <div class="hero-content-text">
-      <h1>Contact Us</h1>
-      <p>
-        Ready to take it to the next level? Let’s talk about your project or idea and find out how 
-        we can help your business grow. If you are looking for unique digital experiences that’s 
-        relatable to your users, drop us a line.
-      </p>
-     </div>
-      <form id="contact-form">
-        <div class="form-group">
-          <input type="text" id="name" name="name" placeholder="Name" required>
-          <span class="validation-message" id="name-validation">Can't be empty</span>
+  <div class="location">
+    <div class="content">
+      <h3>Canada</h3>
+      <div class="contact-info">
+        <div class="address">
+          <strong>Designo Central Office</strong>
+          <br>
+          3886 Wellington Street
+          <br>
+          Toronto, Ontario M9C 3J5
         </div>
-        <div class="form-group">
-          <input type="email" id="email" name="email" placeholder="Email" required>
-          <span class="validation-message" id="name-validation">Can't be empty</span>
+        <div class="phone">
+          <strong>Contact</strong>
+          <br>
+          P : +1 253-863-8967
+          <br>
+          M : contact@designo.co
         </div>
-        <div class="form-group">
-          <input type="tel" id="phone" name="phone" placeholder="Phone">
-          <span class="validation-message" id="name-validation">Can't be empty</span>
+      </div>
+    </div>
+    <div id="mapid1"></div>
+  </div>
+
+  <div class="location">
+    <div id="mapid2"></div>
+    <div class="content">
+      <h3>Australia</h3>
+      <div class="contact-info">
+        <div class="address">
+          <strong>Designo AU Office</strong>
+          <br>
+          18 Balonne Street
+          <br>
+          New South Wales 2443
         </div>
-        <div class="form-group">
-          <textarea id="message" name="message" placeholder="Message" required></textarea>
-          <span class="validation-message" id="name-validation">Can't be empty</span>
+        <div class="phone">
+          <strong>Contact</strong>
+          <br>
+          P : (02) 6720 9092
+          <br>
+          M : contact@designo.au
         </div>
-        <button type="submit">SUBMIT</button>
-      </form>
+      </div>
     </div>
   </div>
-  
-  <div class="locations">
-    <div class="location1">
-      <img src="/assets/shared/desktop/illustration-canada.svg">
-      <h3>CANADA</h3>
-      <button class="see-location-btn">SEE LOCATION</button>
+
+  <div class="location">
+    <div class="content">
+      <h3>United Kingdom</h3>
+      <div class="contact-info">
+        <div class="address">
+          <strong>Designo UK Office</strong>
+          <br>
+          13 Colorado Way
+          <br>
+          Rhyd-y-fro SA8 9GA
+        </div>
+        <div class="phone">
+          <strong>Contact</strong>
+          <br>
+          P : 078 3115 1400
+          <br>
+          M : contact@designo.uk
+        </div>
+      </div>
     </div>
-    <div class="location2">
-      <img src="/assets/shared/desktop/illustration-australia.svg">
-      <h3>AUSTRALIA</h3>
-      <button class="see-location-btn">SEE LOCATION</button>
+    <div id="mapid3"></div>
+  </div>
+
+
+
+  <div class="contact">
+    <div class="contact-text">
+      <div class="text-wrapper">
+        <h2>Let’s talk about your project</h2>
+        <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business
+          grow.</p>
+      </div>
     </div>
-    <div class="location3">
-      <img src="/assets/shared/desktop/illustration-united-kingdom.svg">
-      <h3>UNITED KINGDOM</h3>
-      <button class="see-location-btn">SEE LOCATION</button>
-    </div>
+    <a href="contact.html" class="contact-button">GET IN TOUCH</a>
   </div>
 
   <footer>
@@ -113,9 +147,10 @@
         
       </div>
     </div>
-  </footer>
+  </footer> 
 
-  <script src = "/contact.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="/locations.js"></script>
   <script src = "/menu.js"></script>
 </body>
 </html>
