@@ -468,7 +468,8 @@ footer {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -35%);
-    z-index: 2;
+    z-index: 0;
+    pointer-events: none;
   }
 
   .hero-content {
@@ -479,6 +480,10 @@ footer {
     margin: auto;
     margin-top: 2em; 
     box-sizing: border-box;
+  }
+
+  .hero-cta-button {
+    z-index: 20;
   }
 
   .services-grid {
@@ -613,6 +618,14 @@ footer {
   body {
     overflow-x: hidden;
   }
+
+  .background-oval-1 {
+    display: none;
+  }
+
+  .background-oval-2 {
+    display: none;
+  }
   
   .navbar-container {
     width: 100vw;
@@ -627,10 +640,10 @@ footer {
   
   
   .logo img {
+    margin-top: 10px;
     width: 196px;
     height: 24px;
   }
-  
  
   #menuToggle {
     padding-right: 70px;
@@ -692,17 +705,17 @@ footer {
   }
 
   .overlay {
-    display: none; /* Initially hidden */
-    position: fixed; /* Fixed position to cover the whole viewport */
+    display: none; 
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    z-index: 1; /* Below the menu */
+    width: 100vw;
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
   }
   
-  /* Show the overlay when the menu is open */
+  
   #menuToggle input:checked ~ .overlay {
     display: block;
   }
@@ -755,6 +768,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -35%);
     z-index: 0;
+    pointer-events: none;
   }
 
   .hero-content {
@@ -769,6 +783,10 @@ footer {
 
   .hero-content h1 {
     font-size: 32px;
+  }
+
+  .hero-cta-button {
+    z-index: 10;
   }
 
   .services-grid {

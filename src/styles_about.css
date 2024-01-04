@@ -614,7 +614,16 @@
   
   @media (max-width: 750px) {
     body {
+      padding-top: 100px;
       overflow-x: hidden;
+    }
+
+    .background-oval-1 {
+      display: none;
+    }
+  
+    .background-oval-2 {
+      display: none;
     }
 
     .navbar-container {
@@ -626,14 +635,14 @@
       background-color: #fff; 
       position: fixed;
       z-index: 10;
+      margin-top: -100px;
     }
-    
   
     .logo img {
-      width: 196px;
-      height: 24px;
-    }
-    
+    margin-top: 10px;
+    width: 196px;
+    height: 24px;
+  }
   
     #menuToggle {
       padding-right: 70px;

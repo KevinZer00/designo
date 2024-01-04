@@ -347,9 +347,10 @@ footer {
 
 @media (max-width: 750px) {
   body {
+    padding-top: 100px;
     overflow-x: hidden;
   }
-  
+
   .navbar-container {
     width: 100vw;
     display: flex;
@@ -359,9 +360,11 @@ footer {
     background-color: #fff; 
     position: fixed;
     z-index: 10;
+    margin-top: -100px;
   }
 
   .logo img {
+    margin-top: 10px;
     width: 196px;
     height: 24px;
   }

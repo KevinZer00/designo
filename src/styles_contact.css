@@ -471,6 +471,7 @@ footer {
 @media (max-width: 750px) {
 
   body {
+    padding-top: 100px;
     overflow-x: hidden;
   }
 
@@ -483,14 +484,15 @@ footer {
     background-color: #fff; 
     position: fixed;
     z-index: 10;
+    margin-top: -100px;
   }
   
 
   .logo img {
+    margin-top: 10px;
     width: 196px;
     height: 24px;
   }
-  
   #menuToggle {
     padding-right: 70px;
     position: relative;
@@ -598,6 +600,7 @@ footer {
   }
 
   .hero {
+    position: relative;
     width: 100vw;
     height: 764px;
     border-radius: 0px;
@@ -614,6 +617,7 @@ footer {
   .hero-content h1 {
     font-size: 32px;
   }
+
   .hero-content p {
     font-size: 15px;
   }
