@@ -795,28 +795,28 @@
       border-radius: 0px;
       max-width: 100vw;
       height: 865px;
-      flex-direction: column; /* Stack children vertically */
+      flex-direction: column; 
       justify-content: flex-start;
       margin-bottom: 5em;
     }
     
     .talent-img {
       background-image: url("assets/about/mobile/image-world-class-talent.jpg");
-      background-size: cover; /* Changed from contain to cover */
+      background-size: cover; 
       background-position: center;
       background-repeat: no-repeat;
-      width: 100%; /* Full width */
-      height: 40%; /* Half of the hero container height */
-      order: 1; /* Image on top */
+      width: 100%; 
+      height: 40%; 
+      order: 1; 
     }
     
     .talent-text {
-      width: 80vw; /* Full width */
-      height: auto; /* Half of the hero container height */
-      order: 2; /* Text content below the image */
-      padding: 20px; /* Adjust padding as needed */
-      box-sizing: border-box; /* Include padding in the height calculation */
-      text-align: center; /* Center content vertically within the text area */
+      width: 80vw; 
+      height: auto;
+      order: 2;
+      padding: 20px; 
+      box-sizing: border-box;
+      text-align: center; 
     }
 
     .talent-text h1 {
@@ -829,20 +829,19 @@
 
     .locations {
       display: flex;
-      flex-direction: column; /* Stack children vertically */
-      align-items: center; /* Center items horizontally */
-      justify-content: space-around; /* Evenly space the children */
-      width: 350px; /* Set width of the container */
-      height: 1230px; /* Set height of the container */
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: space-around; 
+      width: 350px; 
+      height: 1230px;
       margin: auto;
       margin-bottom: 5em;
-      gap: 30px; /* Adjust gap between items */
+      gap: 30px; 
   }
   
   .location1, .location2, .location3 {
-      width: 100%; /* Each location takes full width of the container */
-      margin-bottom: 20px; /* Adjust space between items */
-      /* Maintain existing background styles */
+      width: 100%; 
+      margin-bottom: 20px; 
       background-position: center top;
       background-repeat: no-repeat;
   }
@@ -911,6 +910,7 @@
     padding: 50px;
     text-align: center;
     box-sizing: border-box;
+    z-index: 1;
   }
   
   .contact-text {

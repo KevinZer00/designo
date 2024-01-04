@@ -767,6 +767,7 @@ body {
     padding: 50px;
     text-align: center;
     box-sizing: border-box;
+    z-index: 1;
   }
   
   .contact-text {
